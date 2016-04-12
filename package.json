@@ -1,0 +1,21 @@
+{
+  "name": "fuse-bekk-open",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bekk",
+    "fuse",
+    "shower",
+    "presentation"
+  ],
+  "author": "Tri Nguyen <mail@trimn.net>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "shower-bekk": "^1.0.0",
+    "shower-core": "^2.0.6"
+  }
+}

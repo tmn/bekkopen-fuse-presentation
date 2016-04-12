@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="node_modules/shower-bekk/styles/screen-16x10.css">
+    <style>
+
+    .designer-developer-illustration {
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .designer {
+      position: relative;
+      top: 35px;
+    }
+      .designer-line {
+        background-color: rgba(253, 80, 88, 1.0);
+        margin-right: 20px;
+      }
+
+    .developer {
+      text-align: right;
+      position: relative;
+      top: -30px;
+    }
+      .developer-line {
+        background-color: rgba(1, 174, 225, 1.0);
+        margin-left: 20px;
+      }
+
+    .designer-line,
+    .developer-line {
+      display: inline-block;
+      height: 3px;
+    }
+    .bottom-line {
+
+    }
+
+    h4 {
+      position: relative;
+      right: 0;
+      top: 30px;
+      opacity: .6;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    #cover {
+      box-sizing: border-box;
+      padding-top: 420px;
+    }
+    #cover h1 {
+      text-align: left;
+      font-size: 55px;
+      margin: 0;
+      line-height: 63px;
+      text-transform: uppercase;
+    }
+
+    #cover h2 {
+      text-align: left;
+      margin: 0;
+      padding-left: 3px;
+    }
+
+    #cover h1::before {
+      display: block;
+      height: 1px;
+      width: 100%;
+      border-top: 1px solid #555;
+      padding-top: 12px;
+      margin-top: 20px;
+      content: "";
+    }
+
+    #cover p {
+      font-size: 14px;
+      padding-left: 3px;
+    }
+
+    </style>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+  		<h1>Designere, de nye utviklerne</h1>
+  		<p>Tri Nguyen</p>
+  	</header>
+
+    <section class="slide" id="video">
+      <video
+        src="media/BEKK_Open.mp4"
+        autoplay
+        loop></video>
+      <style>
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+        border-top: 1px solid rgba(64, 62, 63, 1.0);
+        border-bottom: 1px solid rgba(64, 62, 63, 1.0);
+      }
+
+      #video {
+        background-color: rgba(32, 28, 30, 1.0);
+      }
+      </style>
+    </section>
+
+    <section class="slide" id="cover">
+      <h2>BEKK Open</h2>
+      <h1>Designere, de nye utviklerne</h1>
+      <p>Tri Nguyen &nbsp; | &nbsp; <a href="mailto:tri.nguyen@bekk.no">tri.nguyen@bekk.no</a></p>
+    </section>
+
+    <section class="slide">
+      <h3>Placeholder page</h3>
+
+      <p>Lorem ipsum dolor sit amet ...</p>
+    </section>
+
+    <section class="slide">
+      <div class="designer-developer-illustration">
+        <div class="designer">
+          <h4>designer</h4>
+          <span class="designer-line" style="width: 300px"></span>
+          <span class="designer-line" style="width: 60px; opacity: .4; margin-left: 140px;"></span>
+        </div>
+
+        <div class="developer">
+          <h4>utvikler</h4>
+          <span class="developer-line" style="width: 380px"></span>
+        </div>
+
+        <div class="bottom-line">
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div class="designer-developer-illustration">
+        <div class="designer">
+          <h4>designer</h4>
+          <span class="designer-line" style="width: 150px"></span>
+          <span class="designer-line" style="width: 120px"></span>
+          <span class="designer-line" style="width: 80px; opacity: .6"></span>
+          <span class="designer-line" style="width: 80px; opacity: .4"></span>
+        </div>
+
+        <div class="developer">
+          <h4>utvikler</h4>
+          <span class="developer-line" style="width: 550px"></span>
+        </div>
+
+        <div class="bottom-line">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Test</h2>
+
+      <p>Lipsum dolor sit amet</p>
+    </section>
+    <script src="node_modules/shower-core/shower.min.js"></script>
+  </body>
+</html>
