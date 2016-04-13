@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="node_modules/shower-bekk/styles/screen-16x10.css">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="styles/screen-16x10.css">
     <style>
 
     .designer-developer-illustration {
@@ -12,6 +15,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    .smaller {
+      width: 45%;
     }
 
     .designer {
@@ -53,7 +60,7 @@
 
     #cover {
       box-sizing: border-box;
-      padding-top: 420px;
+      padding-top: 370px;
     }
     #cover h1 {
       text-align: left;
@@ -82,6 +89,14 @@
     #cover p {
       font-size: 14px;
       padding-left: 3px;
+    }
+
+    dt {
+      line-height: 20px;
+    }
+
+    dd {
+      margin-left: 25px;
     }
 
     </style>
@@ -121,10 +136,74 @@
       <p>Tri Nguyen &nbsp; | &nbsp; <a href="mailto:tri.nguyen@bekk.no">tri.nguyen@bekk.no</a></p>
     </section>
 
-    <section class="slide">
-      <h3>Placeholder page</h3>
+    <section class="slide" id="timeline">
 
-      <p>Lorem ipsum dolor sit amet ...</p>
+      <article style="left: 150px;">
+        <header>native</header>
+      </article>
+
+      <article style="left: 50%; transform: translateX(-50%);">
+        <header>native + web</header>
+      </article>
+
+      <article style="right: 150px;">
+        <header>native++</header>
+      </article>
+
+      <span style="display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 1px; background: #01AEE1; width: 100%; z-index: 0;"></span>
+
+      <style>
+      #timeline article {
+        position: absolute;
+        top: 234px;
+        font-size: 20px;
+        z-index: 10;
+      }
+
+      #timeline article::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #FD5058;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      </style>
+    </section>
+
+    <section class="slide">
+      <img src="./images/FuseLogo.png" alt="Fuse logo" style="max-width: 280px; max-height: 280px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    </section>
+
+    <section class="slide" id="designers-vs-developers">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 45px;">
+        <span style="font-family: 'Dancing Script', cursive;">Designers</span> <span style="font-size: 35px; padding: 0 8px;">vs</span> <span style="font-family: 'Audiowide', cursive;">Developers</span>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <img src="images/designer_and_developer.png" alt="" class="cover">
+    </section>
+
+    <section class="slide">
+      <img src="images/designer_and_developer_2.png" alt="" class="cover">
+    </section>
+
+    <section class="slide">
+      <img src="images/designer_and_developer_3.png" alt="" class="cover">
+    </section>
+
+    <section class="slide">
+      <img src="images/designer_and_developer_4.png" alt="" class="cover">
+    </section>
+
+    <section class="slide">
+      <img src="images/designer_and_developer_5.png" alt="" class="cover">
     </section>
 
     <section class="slide">
@@ -148,18 +227,18 @@
 
 
     <section class="slide">
-      <div class="designer-developer-illustration">
+      <div class="designer-developer-illustration smaller">
         <div class="designer">
           <h4>designer</h4>
-          <span class="designer-line" style="width: 150px"></span>
           <span class="designer-line" style="width: 120px"></span>
-          <span class="designer-line" style="width: 80px; opacity: .6"></span>
-          <span class="designer-line" style="width: 80px; opacity: .4"></span>
+          <span class="designer-line" style="width: 100px"></span>
+          <span class="designer-line" style="width: 50px; opacity: .6"></span>
+          <span class="designer-line" style="width: 25px; opacity: .4"></span>
         </div>
 
         <div class="developer">
           <h4>utvikler</h4>
-          <span class="developer-line" style="width: 550px"></span>
+          <span class="developer-line" style="width: 410px"></span>
         </div>
 
         <div class="bottom-line">
@@ -169,9 +248,19 @@
     </section>
 
     <section class="slide">
-      <h2>Test</h2>
 
-      <p>Lipsum dolor sit amet</p>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Takk!<a  style="display: block; font-size: 32px; background: none;" href="http://twitter.com/itmn">@itmn</a></h2>
+    </section>
+
+    <section class="slide">
+      <h2>Bilder</h2>
+
+      <dl>
+        <dt>Illustrasjoner av designer og utvikler fra Fuse</dt>
+        <dd><a href="https://www.youtube.com/watch?v=jnihk1D11Us">https://www.youtube.com/watch?v=jnihk1D11Us</a></dd>
     </section>
     <script src="node_modules/shower-core/shower.min.js"></script>
   </body>
