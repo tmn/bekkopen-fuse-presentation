@@ -1,0 +1,13 @@
+      <ScrollView Height="443.25" Margin="46.06, 224.76, 38.73, 0">
+        <JavaScript File="demo.js" />
+
+        <StackPanel>
+          <Style><Text TextWrapping="Wrap" TextColor="#fff"/></Style>
+          <Each Items="{posts}">
+            <StackPanel Margin="0, 0, 0, 19.14">
+              <Text Value="{Title}" Margin="0, 0, 0, 5" FontSize="18" />
+              <Text Value="{Summary}" FontSize="12" />
+            </StackPanel>
+          </Each>
+        </StackPanel>
+      </ScrollView>
